@@ -17,6 +17,13 @@ describe('calculateCommissionFunction', () => {
     })
 
     test('commission for total sales less than or equal to 1000', () => {
+        const [totalSales, commission] = calculateCommissionFunction(50, 50, 50);
+        
+        expect(totalSales).toBe(5000);
+        expect(commission).toBe(991);
+    })
+
+    test('commission for total sales less than or equal to 1000', () => {
         expect(calculateCommissionFunction(100, 150, 200)).toBe("Sales quantities exceed maximum limits.");
     })
 
