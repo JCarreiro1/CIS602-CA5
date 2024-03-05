@@ -31,8 +31,5 @@ jobs:
       - name: Install Dependencies # Install project dependencies
         run: npm install # Run the npm install command to install dependencies
 
-      - name: Install jest # Install project dependencies
-        run: npm install # Run the npm jest command to install dependencies
-
       - name: Run Tests # Run automated tests
         run: npm test # Run the npm test command to execute tests
